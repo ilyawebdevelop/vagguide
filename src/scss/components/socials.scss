@@ -1,4 +1,34 @@
 // socials
 .socials {
-    
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 35px;
+    }
+
+    &-item {
+        align-items: flex-start;
+        border-radius: 5px 5px 0px 0px;
+        background: #F8F8F8;
+        padding-top: 25px;
+        padding-bottom: 23px;
+        padding-left: 26px;
+        padding-right: 25px;
+        column-gap: 20px;
+        grid-column: 3 span;
+        border-bottom: 1px solid #EEE;
+        &__title {
+            margin-bottom: 5px;
+            font-size: 18px;    
+            font-weight: 500;
+        }
+        &__subtitle {
+            margin-bottom: 27px;
+            color: #000;
+            opacity: .5;
+        }
+        img {
+            width: 35px;
+        }
+    }
 }

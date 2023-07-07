@@ -1,4 +1,95 @@
 // reviews
 .reviews {
-    
+    background-color: #F8F8F8;
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 50px;
+        align-items: center;
+    }
+
+    &-slider {
+        background-color: #fff;
+        grid-column: 8 span;
+        width: 100%;        
+        padding-top: 40px;
+        padding-bottom: 44px;      
+        border-radius: 5px;
+    }
+    &-slide {
+        &__top {
+            margin-bottom: 37px;
+            padding-left: 40px;
+            padding-right: 35px;
+        }
+        &__name {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+        }
+        &__text {
+            line-height: 22px;
+            padding-left: 65px;
+            opacity: .75;
+            position: relative;
+            padding-bottom: 35px;
+           
+            padding-right: 35px;
+            border-bottom: 1px solid rgba(#000000, .05);
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 40px;
+                top: -15px;
+                width: 85px;
+                height: 60px;
+                background: url('@img/reviews/quote.svg') no-repeat center center / 85px;
+                z-index: -1;
+            }
+        }
+    }
+
+    &-company {
+        grid-column: 4 span;
+    }
+
+    .company-item {
+        column-gap: 35px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 34px;
+        border-radius: 5px;
+        background: #F2F2F2;
+        &:not(:last-child){
+            margin-bottom: 25px;
+        }
+
+        &__num {
+            font-family: $font-family-title;
+            font-size: 72px;
+            line-height: 72px;
+            text-transform: uppercase;
+            padding-top: 10px;
+        }
+
+        &__logo {
+            margin-bottom: 5px;
+            width: 69px;
+        }
+        &__link {
+            color: $red-color;
+            line-height: 26px;
+            transition: color .2s linear;
+            &:hover {
+                color: #000;
+            }
+        }
+
+        &__content {}
+    }
+}
+.reviews-slide__date-wrapper {
+    column-gap: 28px;
 }

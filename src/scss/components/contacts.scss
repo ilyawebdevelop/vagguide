@@ -1,4 +1,43 @@
 // contacts
 .contacts {
-    
+    padding-top: 0;
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 35px;
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+
+    &-item {
+        grid-column: 3 span;
+
+        &__title {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 5px;
+        }
+        &__descr {
+            margin-bottom: 28px;
+            color: #000;
+            opacity: .5;
+            line-height: 20px;
+        }
+        &__phone {
+            transition: color .2s linear;
+            &:hover {
+                color: $red-color;
+            }
+        }
+    }
+
+    .map {
+        img {
+            height: 500px;
+            object-fit: cover;
+        }
+    }
+
 }

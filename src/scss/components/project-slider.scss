@@ -1,4 +1,83 @@
 // project-slider
 .project-slider {
-    
+    padding-bottom: 20px;
+    &-sect {
+        padding-bottom: 52px;
+    }
+}
+.project-card {
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+    &__image {
+        position: relative;
+        &:hover {
+            .read-more {
+                opacity: 1;
+            }
+            &:after {
+                opacity: 1;
+            }
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba(#000, .2);
+            opacity: 0;
+            transition: opacity .2s linear;
+            border-radius: 5px;
+        }
+        img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .read-more {
+            font-family: $font-family-title;
+            font-size: 32px;
+            line-height: 32px;
+            color: #fff;
+            border-bottom: 2px solid $red-color;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 50%;
+            transform: translateY(-50%);
+            width: fit-content;
+            padding-bottom: 5px;
+            opacity: 0;
+            transition: opacity .2s linear;
+            z-index: 1;
+        }
+    }
+    &__date {
+        opacity: .5;
+    }
+    &__content {
+        padding-top: 25px;
+        padding-right: 25px;
+        padding-bottom: 30px;
+        padding-left: 28px;
+    }
+    &__title {
+        font-weight: 500;
+        margin-top: 15px;
+        line-height: 24px;
+        transition: color .2s linear;
+        height: 48px;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        /* Включаем флексбоксы */
+        -webkit-box-orient: vertical;
+        /* Вертикальная ориентация */       
+        &:hover {
+            color: #FF1F1F;
+        } 
+    }
 }

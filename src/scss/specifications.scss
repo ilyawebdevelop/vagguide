@@ -206,6 +206,12 @@ h5 {
   width: 45px;
   height: 45px;
   min-width: 45px;
+  &.swiper-button-disabled {
+    border-color: #B3B3B3;
+    svg {
+      fill: #B3B3B3;
+    }
+  }
   svg {
     width: 25px;
     height: 25px;
@@ -220,5 +226,42 @@ h5 {
   color: #46487A;
 }
 .slider-title-wrapper {
-  margin-bottom: 45px;
+  margin-bottom: 52px;
+}
+.swiper-pagination {
+  position: unset;
+  justify-content: center;
+}
+.swiper-pagination-bullet {
+  opacity: 1;
+  background-color: #D9D9D9;
+  margin-left: 6px!important;
+  margin-right: 6px!important;
+  width: 10px;
+  height: 10px;
+}
+.swiper-pagination-bullet-active {
+  background-color: $red-color;
+}
+.pagi-navi-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+}
+.link-red {
+  color: $red-color;
+  transition: color .2s linear;
+  &:hover {
+    color: #000;
+  }
+}
+.link-white{
+  color: #fff;
+  transition: color .2s linear;
+  &:hover {
+    color: $red-color;
+  }
 }

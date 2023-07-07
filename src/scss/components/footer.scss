@@ -1,4 +1,135 @@
 // Footer
 .footer {
+    background: #101010;
+    color: #fff;
 
+    .develop {
+        color: #DBDBDB;
+        a {
+            display: inline-block;
+            color: $red-color;
+            transition: color .2s linear;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    .copyright {
+        line-height: 26px;
+        opacity: .5;
+    }
+
+    .politics {
+        opacity: .85;
+
+    }
+
+    &-top {
+        &__left {
+            padding-top: 75px;
+            padding-bottom: 90px;
+        }
+        &__right {
+            background-color: #000;
+            padding-top: 75px;
+            padding-bottom: 90px;
+            padding-left: 50px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100vw;
+                height: 100%;
+                left: 100%;
+                top: 0;
+                background-color: #000;
+            }
+        }
+        .container {
+            display: grid;
+            grid-template-columns: auto 550px;
+
+           
+        }
+    }
+
+    &-bottom {
+        padding-bottom: 52px;
+        padding-top: 44px;
+        border-top: 1px solid #2F2F2F;
+
+        &__left {
+            column-gap: 132px;
+        }
+    }
+    &-logo {
+        margin-bottom: 50px;
+    }
+    &-contact {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;       
+        svg {
+            fill: $red-color;
+            width: 17px;
+            height: 17px;
+        }
+    }
+}
+.footer-mail {
+    margin-top: 18px;
+    column-gap: 18px;       
+    svg {
+        width: 17px;
+        height: 17px;
+    }
+}
+.footer-logo-nav-wrap {
+    display: flex;
+}
+.footer-logo-wrap {
+    margin-right: 115px;
+    min-width: 200px;
+}
+.footer-nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;    
+    padding-right: 70px;
+}
+.footer__nav {
+    &-list {
+        li {
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+            a {
+                opacity: .85;
+                line-height: 26px;
+                transition: color .2s linear;
+                &:hover {
+                    color: $red-color;
+                }
+            }
+        }
+    }
+}
+.footer-form {
+    position: relative;
+    &__title {
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    input {
+        border-bottom: 1px solid #4E4E4E;
+        padding-bottom: 24px;
+        width: 100%;
+    }
+    margin-top: 60px;
+}
+.footer-top-z {
+    z-index: 1;
 }

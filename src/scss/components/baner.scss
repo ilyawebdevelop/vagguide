@@ -1,4 +1,30 @@
 // baner
 .baner {
+    padding-top: 0;   
+    &-item {
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 58px;
+        padding-bottom: 63px;
+        padding-right: 45px;
+        border-radius: 5px;
+        .h2 {
+            color: #fff;
+            max-width: 435px;
+            line-height: 36px;
+            span {
+                color: $red-color;
+            }
+        }
+        &__content {
+            column-gap: 42px;
+          
+        }
+    }
+    .pagination {
+        justify-content: center;
+        position: unset;
+        margin-top: 25px;
+    }
     
 }
