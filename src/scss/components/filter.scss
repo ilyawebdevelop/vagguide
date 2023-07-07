@@ -1,0 +1,97 @@
+// filter
+.filter {
+    background-color: #F8F8F8;
+    &-title {
+        margin-bottom: 25px;
+    }
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+
+        .select-wrapper {
+            grid-column: 3 span;
+
+            &:not(:first-child) {
+                border-radius: 0;
+
+                .select2-container .select2-selection--single {
+                    border-radius: 0;
+                }
+            }
+            &:first-child {
+                .select2-container .select2-selection--single {
+                    border-left: none;
+                }
+            }
+
+            .select2-container {
+                width: 100% !important;
+            }
+
+            .select2-container--default .select2-selection--single .select2-selection__rendered {
+                color: #000;
+            }
+
+            .select2-container .select2-selection--single {
+                height: 85px;
+                display: flex;
+                align-items: center;
+                padding-left: 28px;
+                border-right: none;
+                border-color: rgba(0, 0, 0, 0.10);
+                border-radius: 5px;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                border-top: none;
+                border-bottom: none;
+            }
+
+
+        }
+
+
+    }
+}
+
+.image-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+
+    img {
+        width: 25px;
+    }
+}
+
+.select2-results__option {
+    padding-left: 34px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    &:not(:last-child) {
+        border: 1px solid #EEE;
+    }
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    display: none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    background: url('@img/icons/arrow-down.svg') no-repeat center center / 17px;
+    right: 30px;
+    top: calc(50% - 13px);
+    transition: transform .2s linear;
+    
+}
+
+.select2-container--default .select2-results__option--disabled img {
+    display: none;
+}
+
+.select2-container--open {
+     .select2-selection__arrow {
+        transform: rotate(180deg);
+    }
+}

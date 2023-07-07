@@ -1,0 +1,56 @@
+// Header
+.header {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 47px;
+  &__top {
+    margin-bottom: 47px;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+  }
+  &__right {
+    column-gap: 57px;
+  }
+  &__nav{
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-weight: 500;
+        li {
+            a {
+                transition: color .2s linear;
+                &:hover {
+                    color: $red-color;
+                }
+            }
+            &.current-menu-item {
+                a {
+                    color: $red-color;
+                }
+            }
+        }
+    }
+  }
+  &-contacts {
+    font-weight: 500;
+
+  }
+}
+.header-link__nav {
+    ul {
+        display: flex;
+        column-gap: 45px;
+        li {          
+            a {
+                opacity: .81;
+            }
+        }
+    }
+}

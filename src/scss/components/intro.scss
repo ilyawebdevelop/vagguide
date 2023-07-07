@@ -1,0 +1,25 @@
+// intro
+.intro {
+    padding-bottom: 80px;
+    color: #fff;
+    &__descr {
+        max-width: 400px;
+        opacity: .5;
+    }
+    &-main {
+        padding-top: 310px;
+    }
+    .h1 {
+        max-width: 725px;
+        margin-bottom: 25px;
+    }
+}
+.auto-logo {
+    margin-top: 55px;
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+    }
+}
