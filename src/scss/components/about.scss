@@ -1,0 +1,13 @@
+.about {
+    background-color: #F8F8F8;
+    &-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 40px;
+    }
+    &-item {
+        p {
+            margin-bottom: 25px;
+        }
+    }
+}

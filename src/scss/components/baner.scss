@@ -1,6 +1,7 @@
 // baner
 .baner {
-    padding-top: 0;   
+    // padding-top: 0;
+    padding-top: 70px;
     &-item {
         background-repeat: no-repeat;
         background-size: cover;
@@ -8,23 +9,54 @@
         padding-bottom: 63px;
         padding-right: 45px;
         border-radius: 5px;
+
         .h2 {
             color: #fff;
             max-width: 435px;
             line-height: 36px;
+            margin-bottom: 0;
+
             span {
                 color: $red-color;
             }
         }
+
         &__content {
             column-gap: 42px;
-          
+
         }
     }
+
     .pagination {
         justify-content: center;
         position: unset;
         margin-top: 25px;
     }
-    
+
+}
+
+.baner-social {
+    .baner-item__content {
+        column-gap: 85px;
+    }
+    .baner-item {
+        padding-left: 62px;
+        .h2 {
+            max-width: 550px;
+            font-size: 32px;
+        }
+    }
+    .baner-item__btn {
+        display: flex;
+        column-gap: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+  
+        img {
+            width: 20px;
+        }
+    }
+}
+.baner-item-logo {
+    margin-right: auto;
 }

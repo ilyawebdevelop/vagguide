@@ -1,0 +1,29 @@
+// brands
+.brands {
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    &-item {
+        grid-column: 4 span;
+        border-right: 1px solid rgba(0, 0, 0, 0.10);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+        padding-bottom: 45px;
+        &.bottom-b-0 {
+            border-bottom: none;
+        }
+        &:nth-child(3n+3){
+            border-right: none;
+        }
+        &__image {
+            max-height: 235px;
+            margin-bottom: 2px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__title {
+            display: block;
+            text-align: center;
+        }
+    }
+}

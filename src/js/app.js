@@ -93,3 +93,35 @@ var mySwiperReviews = new Swiper(reviewsSlider, {
     prevEl: '.reviews .nav-arrow-left',
   },
 });
+
+// update-slider
+const updateSlider = document.querySelector('.update-slider');
+var mySwiperUpdate = new Swiper(updateSlider, {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  speed: 600, 
+  allowTouchMove: true,
+  navigation: {
+    nextEl: '.update-slider-sect .nav-arrow-right',
+    prevEl: '.update-slider-sect .nav-arrow-left',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 8,
+    },   
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+let brandCards = document.querySelectorAll('.brands-item');
+let brandCardsLength = brandCards.length;
+
+brandCards[brandCardsLength - 1].classList.add('bottom-b-0');
+brandCards[brandCardsLength - 2].classList.add('bottom-b-0');
+brandCards[brandCardsLength - 3].classList.add('bottom-b-0');

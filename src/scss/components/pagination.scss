@@ -1,0 +1,126 @@
+// pagination
+.pagination-page {
+    padding-top: 50px;
+    padding-bottom: 0;
+
+    @media(max-width: 991px) {
+        margin-top: 30px;
+    }
+
+    ul {
+        column-gap: 10px;
+
+        li {
+            color: #000;
+            &:nth-child(1){
+                margin-right: 55px;
+            }
+            &:last-child{
+                margin-left: 55px;
+            }
+
+            a {
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 500;
+                width: 45px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: background-color .2s linear;
+                border-radius: 50%;
+                background: #F2F5F8;
+
+                @media (max-width: 991px) {
+                    width: 39px;
+                    height: 39px;
+                }
+
+                &:hover {
+                    background-color: #000;
+                    color: #fff;
+
+                }
+            }
+
+            &.active {
+
+                @media (max-width: 991px) {
+                    background: transparent;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                a {
+                    color: #fff;
+                    pointer-events: none;
+                    background-color: #000;
+                }
+            }
+
+            &.disabled {
+                a {
+                    background-color: #F2F5F8;
+                    pointer-events: none;
+                    color: rgba(221, 221, 221, 0.70);
+                }
+            }
+        }
+    }
+}
+
+.pag-arrow {
+    transition: opacity .2s linear;
+    border: 1px solid #FF1F1F;
+    border-radius: 50%;    
+    a {
+        background: transparent!important;
+    }
+    svg {
+        stroke: transparent;
+        fill: #FF1F1F;
+        width: 20px;
+        height: 20px;
+    }
+
+    &:hover {
+        a {
+           
+        }
+
+        svg {
+            
+        }
+    }
+
+    &.pag-arrow-none {
+        border: 1px solid #B3B3b3;
+        &:hover {
+            a {
+                background-color: #F2F5F8;
+            }
+        }
+
+        a {
+            &:hover {
+                svg {
+                    
+                }
+            }
+
+            pointer-events: none;
+
+            svg {
+                stroke: rgba(#DDD, .7);
+                fill: #B3B3b3;
+            }
+        }
+    }
+}
+.pagination-sect {
+    padding-top: 0;
+    padding-bottom: 0;
+}

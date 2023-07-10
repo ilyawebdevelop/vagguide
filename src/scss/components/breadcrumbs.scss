@@ -1,0 +1,119 @@
+.breadcrumbs {
+  @media (max-width: 767px) {
+    overflow: scroll;
+    // margin-right: 20px;
+  }
+
+  &__list {
+    margin-top: 15px;
+    margin-bottom: 37px;
+    display: flex;
+    padding-right: 20px;
+
+    @media (max-width: 991px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @media (max-width: 575px) {
+      margin-top: 15px;
+      margin-bottom: 22px;
+      padding-left: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    position: relative;
+
+    &:not(:last-child) {
+      padding-right: 29px;
+      @media(max-width: 767px){
+        padding-right: 13px;
+      }
+
+      // background: url('@img/icons/slash.svg') no-repeat right center / 5px;
+      &::after {
+        content: '/';
+        position: absolute;
+        right: 0;
+        top: 1px;        
+        color: #fff;
+        opacity: .5;
+        @media(max-width: 767px){
+          top: -3px;
+        }
+      }
+
+      a {
+        color: #fff;
+        opacity: .5;      
+        font-size: 16px;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      a {
+        transition: opacity .2s linear;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    &:last-child {
+      @media (max-width: 991px) {
+        padding-right: 9px;
+      }
+
+      a {
+        cursor: unset;
+        color: #fff;
+        opacity: .5;
+      }
+
+    }
+
+    &:not(:first-child) {
+      padding-left: 22px;
+    }
+
+    a {
+    
+      white-space: nowrap;
+
+      @media (max-width: 767px) {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+
+    span {
+      font-size: 11px;
+      white-space: nowrap;
+
+      @media (max-width: 767px) {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+}
+
+.intro-standart {
+  .breadcrumbs {
+    padding-top: 215px;
+    .h1 {
+      color: #fff;
+     max-width: 735px;
+    }
+  }
+  .breadcrumbs__list {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,33 @@
+// rus
+.works {
+    &.project-slider-sect {
+        padding-bottom: 75px;
+    }
+}
+.update-slider-sect {
+    padding-bottom: 0;
+}
+.update-slider {
+    padding-bottom: 20px;
+}
+.update-card {
+    height: auto;
+}
+.update-card__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 15px;
+    height: 53px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
+}
+
+.update-card__descr {
+    line-height: 22px;
+    opacity: .5;
+}

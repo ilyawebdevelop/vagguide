@@ -2,7 +2,7 @@
 .project-slider {
     padding-bottom: 20px;
     &-sect {
-        padding-bottom: 52px;
+        padding-bottom: 0;
     }
 }
 .project-card {
@@ -79,5 +79,15 @@
         &:hover {
             color: #FF1F1F;
         } 
+    }
+}
+.related {
+    background-color: #F8F8F8;
+    padding-bottom: 75px;
+    .slider-title-wrapper {
+        margin-bottom: 40px;
+    }
+    .project-card {
+        box-shadow: none;
     }
 }

@@ -32,3 +32,15 @@
         }
     }
 }
+.socials-temp{
+    ul {
+        li {
+            a {
+                transition: opacity .2s linear;
+                &:hover {
+                    opacity: .85;
+                }
+            }
+        }
+    }
+}
