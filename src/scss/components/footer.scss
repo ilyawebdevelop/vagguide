@@ -5,6 +5,7 @@
 
     .develop {
         color: #DBDBDB;
+
         a {
             display: inline-block;
             color: $red-color;
@@ -30,13 +31,26 @@
         &__left {
             padding-top: 75px;
             padding-bottom: 90px;
+            @media(max-width: 575px){
+                padding-top: 27px;
+                padding-bottom: 38px;
+            }
         }
+
         &__right {
             background-color: #000;
             padding-top: 75px;
             padding-bottom: 90px;
             padding-left: 50px;
             position: relative;
+            @media(max-width: 991px){
+                padding-bottom: 44px;
+                padding-top: 34px;
+            }
+            @media(max-width: 575px){
+                padding-left: 0;
+            }
+
             &::before {
                 content: '';
                 position: absolute;
@@ -44,14 +58,29 @@
                 height: 100%;
                 left: 100%;
                 top: 0;
-                background-color: #000;
+                background-color: #000;               
+            }
+            &::after {
+                @media(max-width: 1199px){
+                    content: '';
+                    position: absolute;
+                    width: 100vw;
+                    height: 100%;
+                    right: 100%;
+                    top: 0;
+                    background-color: #000;
+                }
             }
         }
+
         .container {
             display: grid;
             grid-template-columns: auto 550px;
 
-           
+            @media(max-width: 1199px) {
+                grid-template-columns: 1fr;
+            }
+
         }
     }
 
@@ -59,18 +88,41 @@
         padding-bottom: 52px;
         padding-top: 44px;
         border-top: 1px solid #2F2F2F;
+        @media(max-width: 575px){
+            padding-bottom: 44px;
+            padding-top: 34px;
+        }
+        .container {
+            @media(max-width: 767px){
+                row-gap: 38px;
+            }
+        }
 
         &__left {
             column-gap: 132px;
+            @media(max-width: 991px){
+                column-gap: 50px;
+            }
+            @media(max-width: 767px){
+                flex-direction: column-reverse;
+                row-gap: 10px;
+            }
         }
     }
+
     &-logo {
         margin-bottom: 50px;
+        @media(max-width: 575px){
+            display: flex;
+            margin-bottom: 20px;
+        }
     }
+
     &-contact {
         display: flex;
         align-items: center;
-        column-gap: 15px;       
+        column-gap: 15px;
+
         svg {
             fill: $red-color;
             width: 17px;
@@ -78,37 +130,66 @@
         }
     }
 }
+
 .footer-mail {
     margin-top: 18px;
-    column-gap: 18px;       
+    column-gap: 18px;
+
     svg {
         width: 17px;
         height: 17px;
     }
 }
+
 .footer-logo-nav-wrap {
     display: flex;
+    @media(max-width: 575px){
+        flex-direction: column;
+    }
 }
+
 .footer-logo-wrap {
     margin-right: 115px;
     min-width: 200px;
+
+    @media(max-width: 1300px) {
+        margin-right: 50px;
+    }
+    @media(max-width: 575px){
+        padding-bottom: 38px;
+        border-bottom: 1px solid #2F2F2F;
+        margin-right: 0;
+    }
 }
+
 .footer-nav-wrap {
     display: flex;
     justify-content: space-between;
-    width: 100%;    
+    width: 100%;
     padding-right: 70px;
+    @media(max-width: 991px){
+        padding-right: 0;
+        column-gap: 15px;
+    }
+    @media(max-width: 575px){
+        padding-top: 30px;
+        column-gap: 55px;
+        justify-content: flex-start;
+    }
 }
+
 .footer__nav {
     &-list {
         li {
-            &:not(:last-child){
+            &:not(:last-child) {
                 margin-bottom: 20px;
             }
+
             a {
                 opacity: .85;
                 line-height: 26px;
                 transition: color .2s linear;
+
                 &:hover {
                     color: $red-color;
                 }
@@ -116,20 +197,28 @@
         }
     }
 }
+
 .footer-form {
     position: relative;
+    @media(max-width: 575px){
+        margin-top: 0;
+    }
+
     &__title {
         text-transform: uppercase;
         font-size: 14px;
         margin-bottom: 25px;
     }
+
     input {
         border-bottom: 1px solid #4E4E4E;
         padding-bottom: 24px;
         width: 100%;
     }
+
     margin-top: 60px;
 }
+
 .footer-top-z {
     z-index: 1;
 }

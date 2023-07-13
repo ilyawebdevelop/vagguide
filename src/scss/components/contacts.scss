@@ -1,6 +1,9 @@
 // contacts
 .contacts {
     padding-top: 0;
+    @media(max-width: 991px){
+        padding-bottom: 80px;
+    }
 
     &-grid {
         display: grid;
@@ -8,10 +11,24 @@
         column-gap: 35px;
         margin-top: 50px;
         margin-bottom: 80px;
+        @media(max-width: 991px){
+            margin-top: 35px;
+            row-gap: 25px;
+            column-gap: 15px;
+            margin-bottom: 30px;
+        }
     }
 
     &-item {
         grid-column: 3 span;
+        @media(max-width: 991px){
+            grid-column: 6 span;
+        }
+        @media(max-width: 575px){
+            grid-column: 12 span;
+            border-bottom: 1px solid rgba($color: #000000, $alpha: .1);
+            padding-bottom: 24px;
+        }
 
         &__title {
             font-weight: 500;
@@ -40,6 +57,9 @@
         img {
             height: 500px;
             object-fit: cover;
+            @media(max-width: 575px){
+                height: 400px;
+            }
         }
     }
 }

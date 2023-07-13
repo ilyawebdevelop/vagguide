@@ -11936,6 +11936,11 @@ h5 {
   align-items: center;
   column-gap: 10px;
 }
+@media (max-width: 575px) {
+  .footer-contacts-btn {
+    margin-top: 35px;
+  }
+}
 .footer-contacts-btn svg {
   width: 17px;
   height: 17px;
@@ -11948,6 +11953,15 @@ h5 {
   column-gap: 10px;
   border: 1px solid #FF1F1F;
   transition: background-color 0.2s linear;
+}
+@media (max-width: 575px) {
+  .footer-contacts-mail {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    height: fit-content;
+    width: 60px;
+    justify-content: center;
+  }
 }
 .footer-contacts-mail:hover {
   background-color: #FF1F1F;
@@ -13402,6 +13416,11 @@ h5 {
 .contacts {
   padding-top: 0;
 }
+@media (max-width: 991px) {
+  .contacts {
+    padding-bottom: 80px;
+  }
+}
 .contacts-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -13409,8 +13428,28 @@ h5 {
   margin-top: 50px;
   margin-bottom: 80px;
 }
+@media (max-width: 991px) {
+  .contacts-grid {
+    margin-top: 35px;
+    row-gap: 25px;
+    column-gap: 15px;
+    margin-bottom: 30px;
+  }
+}
 .contacts-item {
   grid-column: 3 span;
+}
+@media (max-width: 991px) {
+  .contacts-item {
+    grid-column: 6 span;
+  }
+}
+@media (max-width: 575px) {
+  .contacts-item {
+    grid-column: 12 span;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 24px;
+  }
 }
 .contacts-item__title {
   font-weight: 500;
@@ -13433,6 +13472,11 @@ h5 {
 .contacts .map img {
   height: 500px;
   object-fit: cover;
+}
+@media (max-width: 575px) {
+  .contacts .map img {
+    height: 400px;
+  }
 }
 
 .contacts-page {
@@ -14090,12 +14134,29 @@ h5 {
   padding-top: 75px;
   padding-bottom: 90px;
 }
+@media (max-width: 575px) {
+  .footer-top__left {
+    padding-top: 27px;
+    padding-bottom: 38px;
+  }
+}
 .footer-top__right {
   background-color: #000;
   padding-top: 75px;
   padding-bottom: 90px;
   padding-left: 50px;
   position: relative;
+}
+@media (max-width: 991px) {
+  .footer-top__right {
+    padding-bottom: 44px;
+    padding-top: 34px;
+  }
+}
+@media (max-width: 575px) {
+  .footer-top__right {
+    padding-left: 0;
+  }
 }
 .footer-top__right::before {
   content: "";
@@ -14106,20 +14167,64 @@ h5 {
   top: 0;
   background-color: #000;
 }
+@media (max-width: 1199px) {
+  .footer-top__right::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    right: 100%;
+    top: 0;
+    background-color: #000;
+  }
+}
 .footer-top .container {
   display: grid;
   grid-template-columns: auto 550px;
+}
+@media (max-width: 1199px) {
+  .footer-top .container {
+    grid-template-columns: 1fr;
+  }
 }
 .footer-bottom {
   padding-bottom: 52px;
   padding-top: 44px;
   border-top: 1px solid #2F2F2F;
 }
+@media (max-width: 575px) {
+  .footer-bottom {
+    padding-bottom: 44px;
+    padding-top: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-bottom .container {
+    row-gap: 38px;
+  }
+}
 .footer-bottom__left {
   column-gap: 132px;
 }
+@media (max-width: 991px) {
+  .footer-bottom__left {
+    column-gap: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-bottom__left {
+    flex-direction: column-reverse;
+    row-gap: 10px;
+  }
+}
 .footer-logo {
   margin-bottom: 50px;
+}
+@media (max-width: 575px) {
+  .footer-logo {
+    display: flex;
+    margin-bottom: 20px;
+  }
 }
 .footer-contact {
   display: flex;
@@ -14144,10 +14249,27 @@ h5 {
 .footer-logo-nav-wrap {
   display: flex;
 }
+@media (max-width: 575px) {
+  .footer-logo-nav-wrap {
+    flex-direction: column;
+  }
+}
 
 .footer-logo-wrap {
   margin-right: 115px;
   min-width: 200px;
+}
+@media (max-width: 1300px) {
+  .footer-logo-wrap {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 575px) {
+  .footer-logo-wrap {
+    padding-bottom: 38px;
+    border-bottom: 1px solid #2F2F2F;
+    margin-right: 0;
+  }
 }
 
 .footer-nav-wrap {
@@ -14155,6 +14277,19 @@ h5 {
   justify-content: space-between;
   width: 100%;
   padding-right: 70px;
+}
+@media (max-width: 991px) {
+  .footer-nav-wrap {
+    padding-right: 0;
+    column-gap: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .footer-nav-wrap {
+    padding-top: 30px;
+    column-gap: 55px;
+    justify-content: flex-start;
+  }
 }
 
 .footer__nav-list li:not(:last-child) {
@@ -14172,6 +14307,11 @@ h5 {
 .footer-form {
   position: relative;
   margin-top: 60px;
+}
+@media (max-width: 575px) {
+  .footer-form {
+    margin-top: 0;
+  }
 }
 .footer-form__title {
   text-transform: uppercase;

@@ -582,7 +582,17 @@
             <div class="footer-top__left">
                 <div class="footer-logo-nav-wrap">
                     <div class="footer-logo-wrap">
-                        <a href="/" class="footer-logo">
+                        <div class="footer-logo-sm d-flex d-sm-none justify-content-between">
+                            <a href="/" class="footer-logo d-block d-sm-none">
+                                <img src="img/header/logo.png" alt="logo">
+                            </a>
+                            <a class="footer-contacts-mail btn d-flex d-sm-none" href="/contacts">
+                                <svg>
+                                    <use xlink:href="img/icons/icons.svg#mail"></use>
+                                </svg>                             
+                            </a>
+                        </div>
+                        <a href="/" class="footer-logo d-none d-sm-block">
                             <img src="img/header/logo.png" alt="logo">
                         </a>
                         <a href="tel:+79688630259" class="footer-phone footer-contact link-white">
@@ -597,6 +607,12 @@
                             </svg>
                             Info@vagguide.ru
                         </a>
+                        <button class="btn btn--red footer-contacts-btn d-flex d-sm-none">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#phone"></use>
+                            </svg>
+                            Заказать обратный звонок
+                        </button>
                     </div><!-- /footer-logo-wrap -->
                     <div class="footer-nav-wrap">
                         <nav class="footer__nav">
@@ -613,7 +629,7 @@
                                 <li><a href="#">О компании</a></li>
                                 <li><a href="#">Наши филиалы</a></li>
                                 <li><a href="#">Партнерство</a></li>
-                                <li><a href="#">Контакты</a></li>                            
+                                <li><a href="#">Контакты</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -622,13 +638,13 @@
             </div>
             <div class="footer-top__right">
                 <div class="d-flex justify-content-between align-items-center footer-top-z">
-                    <button class="btn btn--red footer-contacts-btn">
+                    <button class="btn btn--red footer-contacts-btn d-none d-sm-flex">
                         <svg>
                             <use xlink:href="img/icons/icons.svg#phone"></use>
                         </svg>
                         Заказать обратный звонок
                     </button>
-                    <a class="footer-contacts-mail btn" href="/contacts">
+                    <a class="footer-contacts-mail btn d-none d-sm-flex" href="/contacts">
                         <svg>
                             <use xlink:href="img/icons/icons.svg#mail"></use>
                         </svg>
@@ -647,8 +663,8 @@
 
     </div>
     <div class="footer-bottom">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="footer-bottom__left d-flex">
+        <div class="container d-flex justify-content-between align-items-center flex-column flex-md-row">
+            <div class="footer-bottom__left d-flex align-items-center">
                 <div class="copyright">© 2019-2023 Vagguide. </div>
                 <a class="politics link-white" href="#">Политика конфиденциальности </a>
             </div>
