@@ -153,7 +153,8 @@ h6 {
 h2 {
   font-size: 36px;
   @media(max-width: 991px) {
-    font-size: 20px;
+    font-size: 32px;
+    line-height: 32px;
    
   }
 }
@@ -208,6 +209,11 @@ h5 {
   width: 45px;
   height: 45px;
   min-width: 45px;
+  @media(max-width: 991px){
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+  }
   &.swiper-button-disabled {
     border-color: #B3B3B3;
     svg {
@@ -221,6 +227,9 @@ h5 {
   }
   &-wrapper {
     column-gap: 15px;
+    @media(max-width: 991px){
+      column-gap: 10px;
+    }
   }
 }
 
@@ -229,6 +238,9 @@ h5 {
 }
 .slider-title-wrapper {
   margin-bottom: 52px;
+  @media(max-width: 991px){
+    margin-bottom: 32px;
+  }
 }
 .swiper-pagination {
   position: unset;
@@ -252,6 +264,9 @@ h5 {
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 40px;
+  @media(max-width: 991px){
+    padding-top: 22px;
+  }
 }
 .link-red {
   color: $red-color;

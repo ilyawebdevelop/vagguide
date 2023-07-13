@@ -212,17 +212,23 @@
 			<!-- categories -->
 <section class="categories" id="categories">
     <div class="container">
-        <div class="categories-grid">
-            <a class="categories-item" href="#" style="background-image: url('img/categories/category-1.png');">
-                <div class="h2">Чип-тюнинг</div>
-            </a><!-- /categories-item -->
-            <a class="categories-item" href="#" style="background-image: url('img/categories/category-2.png');">
-                <div class="h2">Дооснащение</div>
-            </a><!-- /categories-item -->
-            <a class="categories-item" href="#" style="background-image: url('img/categories/category-3.jpeg');">
-                <div class="h2">Активация функций</div>
-            </a><!-- /categories-item -->
+
+        <div class="swiper categories-slider">
+            <div class="swiper-wrapper">
+
+                <a class="swiper-slide categories-slide categories-item" href="#" style="background-image: url('img/categories/category-1.png');">
+                    <div class="h2">Чип-тюнинг</div>
+                </a>
+                <a class="swiper-slide categories-slide categories-item" href="#" style="background-image: url('img/categories/category-2.png');">
+                    <div class="h2">Дооснащение</div>
+                </a>
+                <a class="swiper-slide categories-slide categories-item" href="#" style="background-image: url('img/categories/category-3.jpeg');">
+                    <div class="h2">Активация функций</div>
+                </a>              
+
+            </div>
         </div>
+
     </div>
 </section>
 			<!-- project-slider -->
@@ -310,7 +316,7 @@
 
                 <div class="swiper-slide baner-slide baner-item"
                     style="background-image: url('img/baner/baner-home.png');">
-                    <div class="baner-item__content d-flex align-items-center justify-content-end">
+                    <div class="baner-item__content d-flex align-items-start align-items-lg-center justify-content-end">
                         <div class="h2">
                             Установка Камеры заднего вида
                             со <span>скидкой в 10%</span> до конца месяца.
@@ -321,7 +327,7 @@
 
                 <div class="swiper-slide baner-slide baner-item"
                     style="background-image: url('img/baner/baner-home.png');">
-                    <div class="baner-item__content d-flex align-items-center justify-content-end">
+                    <div class="baner-item__content d-flex align-items-start align-items-lg-center justify-content-end">
                         <div class="h2">
                             Установка Камеры заднего вида
                             со <span>скидкой в 10%</span> до конца месяца.
@@ -331,7 +337,7 @@
                 </div><!-- /baner-slide -->
                 <div class="swiper-slide baner-slide baner-item"
                     style="background-image: url('img/baner/baner-home.png');">
-                    <div class="baner-item__content d-flex align-items-center justify-content-end">
+                    <div class="baner-item__content d-flex align-items-start align-items-lg-center justify-content-end">
                         <div class="h2">
                             Установка Камеры заднего вида
                             со <span>скидкой в 10%</span> до конца месяца.
@@ -355,11 +361,15 @@
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide reviews-slide">
-                        <div class="reviews-slide__top d-flex justify-content-between align-items-center">
-                            <span class="reviews-slide__name">Игорь Хапков</span>
+                        <div class="reviews-slide__top flex-column flex-md-row d-flex justify-content-between align-items-start align-items-md-center">
+                            <div class="d-flex reviews-slide__name-wrapper">
+                                <span class="reviews-slide__name">Игорь Хапков</span>
+                                <a href="#" class="reviews-slide__btn d-block d-md-none"><img src="img/reviews/drive.png" alt="logo"></a>
+                            </div>
+                           
                             <div class="reviews-slide__date-wrapper d-flex align-items-center">
                                 <span class="reviews-slide__date">22 марта 2023</span>
-                                <a href="#" class="reviews-slide__btn"><img src="img/reviews/drive.png" alt="logo"></a>
+                                <a href="#" class="reviews-slide__btn d-none d-md-block"><img src="img/reviews/drive.png" alt="logo"></a>
                             </div>
                         </div>
                         <p class="reviews-slide__text">
@@ -369,11 +379,14 @@
                     </div><!-- /reviews-slide -->
 
                     <div class="swiper-slide reviews-slide">
-                        <div class="reviews-slide__top d-flex justify-content-between align-items-center">
-                            <span class="reviews-slide__name">Игорь Фывыфвыв ффывфывфыв</span>
+                        <div class="reviews-slide__top flex-column flex-md-row d-flex justify-content-between align-items-start align-items-md-center">
+                            <div class="d-flex reviews-slide__name-wrapper">
+                                <span class="reviews-slide__name">Игорь Неизвестный Игоревич</span>
+                                <a href="#" class="reviews-slide__btn d-block d-md-none"><img src="img/reviews/drive.png" alt="logo"></a>
+                            </div>
                             <div class="reviews-slide__date-wrapper d-flex align-items-center">
                                 <span class="reviews-slide__date">22 марта 2023</span>
-                                <a href="#" class="reviews-slide__btn"><img src="img/reviews/drive.png" alt="logo"></a>
+                                <a href="#" class="reviews-slide__btn d-none d-md-block"><img src="img/reviews/drive.png" alt="logo"></a>
                             </div>
                         </div>
                         <p class="reviews-slide__text">
@@ -383,11 +396,14 @@
                     </div><!-- /reviews-slide -->
 
                     <div class="swiper-slide reviews-slide">
-                        <div class="reviews-slide__top d-flex justify-content-between align-items-center">
-                            <span class="reviews-slide__name">Игорь Хапков</span>
+                        <div class="reviews-slide__top flex-column flex-md-row d-flex justify-content-between align-items-start align-items-md-center">
+                            <div class="d-flex reviews-slide__name-wrapper">
+                                <span class="reviews-slide__name">Игорь Хапков</span>
+                                <a href="#" class="reviews-slide__btn d-block d-md-none"><img src="img/reviews/drive.png" alt="logo"></a>
+                            </div>
                             <div class="reviews-slide__date-wrapper d-flex align-items-center">
                                 <span class="reviews-slide__date">22 марта 2023</span>
-                                <a href="#" class="reviews-slide__btn"><img src="img/reviews/drive.png" alt="logo"></a>
+                                <a href="#" class="reviews-slide__btn d-none d-md-block"><img src="img/reviews/drive.png" alt="logo"></a>
                             </div>
                         </div>
                         <p class="reviews-slide__text">
@@ -444,42 +460,50 @@
 <section class="socials" id="socials">
     <div class="container">
         <h2 class="section-title">Больше информации в соцсетях</h2>
-        <ul class="socials-grid">
 
-            <li class="socials-item d-flex">
-                <img src="img/socials/telegram.svg" alt="icon">
-                <div class="socials-item__content">
-                    <div class="socials-item__title">Телеграмм</div>
-                    <span class="socials-item__subtitle d-block">1394 читателей</span>
-                    <a class="link-red" href="#">Перейти</a>
-                </div>
-            </li>
-            <li class="socials-item d-flex">
-                <img src="img/socials/vk.svg" alt="icon">
-                <div class="socials-item__content">
-                    <div class="socials-item__title">Вконтакте</div>
-                    <span class="socials-item__subtitle d-block">1394 читателей</span>
-                    <a class="link-red" href="#">Перейти</a>
-                </div>
-            </li>
-            <li class="socials-item d-flex">
-                <img src="img/socials/instagram.svg" alt="icon">
-                <div class="socials-item__content">
-                    <div class="socials-item__title">Instagram</div>
-                    <span class="socials-item__subtitle d-block">1394 читателей</span>
-                    <a class="link-red" href="#">Перейти</a>
-                </div>
-            </li>
-            <li class="socials-item d-flex">
-                <img src="img/socials/drive.png" alt="icon">
-                <div class="socials-item__content">
-                    <div class="socials-item__title">DRIVE2</div>
-                    <span class="socials-item__subtitle d-block">1394 читателей</span>
-                    <a class="link-red" href="#">Перейти</a>
-                </div>
-            </li>
 
-        </ul>
+        <div class="swiper socials-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide socials-slide socials-item d-flex">
+                    <img src="img/socials/telegram.svg" alt="icon">
+                    <div class="socials-item__content">
+                        <div class="socials-item__title">Телеграмм</div>
+                        <span class="socials-item__subtitle d-block">1394 читателей</span>
+                        <a class="link-red" href="#">Перейти</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide socials-slide socials-item d-flex">
+                    <img src="img/socials/vk.svg" alt="icon">
+                    <div class="socials-item__content">
+                        <div class="socials-item__title">Вконтакте</div>
+                        <span class="socials-item__subtitle d-block">1394 читателей</span>
+                        <a class="link-red" href="#">Перейти</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide socials-slide socials-item d-flex">
+                    <img src="img/socials/instagram.svg" alt="icon">
+                    <div class="socials-item__content">
+                        <div class="socials-item__title">Instagram</div>
+                        <span class="socials-item__subtitle d-block">1394 читателей</span>
+                        <a class="link-red" href="#">Перейти</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide socials-slide socials-item d-flex">
+                    <img src="img/socials/drive.png" alt="icon">
+                    <div class="socials-item__content">
+                        <div class="socials-item__title">DRIVE2</div>
+                        <span class="socials-item__subtitle d-block">1394 читателей</span>
+                        <a class="link-red" href="#">Перейти</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+   
     </div>
 </section>
 			<!-- contacts -->

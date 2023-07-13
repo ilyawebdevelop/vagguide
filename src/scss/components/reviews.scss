@@ -7,6 +7,14 @@
         grid-template-columns: repeat(12, 1fr);
         column-gap: 50px;
         align-items: center;
+        @media(max-width: 1199px){
+            column-gap: 20px;
+        }
+        @media(max-width: 991px){
+            display: flex;
+            flex-direction: column;
+            row-gap: 21px;
+        }
     }
 
     &-slider {
@@ -16,17 +24,34 @@
         padding-top: 40px;
         padding-bottom: 44px;      
         border-radius: 5px;
+        @media(max-width: 991px){
+            padding-bottom: 25px;
+            padding-top: 25px;
+        }
     }
     &-slide {
         &__top {
             margin-bottom: 37px;
             padding-left: 40px;
             padding-right: 35px;
+            @media(max-width: 991px){
+                padding-left: 26px;
+                padding-right: 26px;
+            }
+        }
+        &__date {
+            @media(max-width: 991px){
+                opacity: .5;
+            }
         }
         &__name {
             font-weight: 500;
             font-size: 18px;
-            line-height: 26px;
+            line-height: 26px;     
+            @media(max-width: 991px){
+                font-size: 16px;
+                line-height: 25px;
+            }     
         }
         &__text {
             line-height: 22px;
@@ -37,6 +62,9 @@
            
             padding-right: 35px;
             border-bottom: 1px solid rgba(#000000, .05);
+            @media(max-width: 991px){
+                padding-left: 45px;
+            }
 
             &::after {
                 content: '';
@@ -47,12 +75,18 @@
                 height: 60px;
                 background: url('@img/reviews/quote.svg') no-repeat center center / 85px;
                 z-index: -1;
+                @media(max-width: 991px){
+                    left: 30px;
+                }
             }
         }
     }
 
     &-company {
         grid-column: 4 span;
+        @media(max-width: 991px){
+            width: 100%;
+        }
     }
 
     .company-item {
@@ -62,8 +96,16 @@
         padding-left: 34px;
         border-radius: 5px;
         background: #F2F2F2;
+        padding-right: 10px;
+        @media(max-width: 1199px){
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
         &:not(:last-child){
             margin-bottom: 25px;
+            @media(max-width: 991px){
+                margin-bottom: 21px;
+            }
         }
 
         &__num {
@@ -92,4 +134,15 @@
 }
 .reviews-slide__date-wrapper {
     column-gap: 28px;
+    @media(max-width: 767px){
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+.reviews-slide__name-wrapper {
+    @media(max-width: 767px){
+        width: 100%;
+        justify-content: space-between;
+        column-gap: 10px;
+    }
 }

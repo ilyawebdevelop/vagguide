@@ -1,9 +1,12 @@
 // socials
 .socials {
-    &-grid {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        column-gap: 35px;
+    &-slider {
+        @media(max-width: 1199px){
+            overflow: visible;
+        }
+        @media(max-width: 575px){
+            padding-right: 45px;
+        }
     }
 
     &-item {
@@ -14,9 +17,11 @@
         padding-bottom: 23px;
         padding-left: 26px;
         padding-right: 25px;
-        column-gap: 20px;
-        grid-column: 3 span;
+        column-gap: 20px;       
         border-bottom: 1px solid #EEE;
+        @media(max-width: 991px){
+            grid-column: 6 span;
+        }
         &__title {
             margin-bottom: 5px;
             font-size: 18px;    

@@ -10,7 +10,6 @@ import Swiper, { Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumb
 Swiper.use([Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Scrollbar]);
 
 
-
 // Burger
 const btnMenu = document.querySelector('#toggle');
 let btnMenuClose = document.querySelector('.btn-close');
@@ -44,27 +43,27 @@ btnMenu?.addEventListener('click', function (e) {
   bodyOverflow();
   toggleMenuLine();
 });
-btnMenuClose.addEventListener('click', function (e) {
-  e.stopPropagation();
-  toggleMenu();
-  toggleBurger();
-  bodyOverflow();
-  toggleMenuLine();
-});
+// btnMenuClose.addEventListener('click', function (e) {
+//   e.stopPropagation();
+//   toggleMenu();
+//   toggleBurger();
+//   bodyOverflow();
+//   toggleMenuLine();
+// });
 
 function formatState(state) {
-    if (!state.id) {
-        return state.text;
-    }
-    var baseUrl = "img/icons/";
-    var $state = $(
-        '<span class="image-wrapper"><img src="' + baseUrl + '/' + state.element.value.toLowerCase() + '.png" class="img-flag" /> ' + state.text + '</span>'
-    );
-    return $state;
+  if (!state.id) {
+    return state.text;
+  }
+  var baseUrl = "img/icons/";
+  var $state = $(
+    '<span class="image-wrapper"><img src="' + baseUrl + '/' + state.element.value.toLowerCase() + '.png" class="img-flag" /> ' + state.text + '</span>'
+  );
+  return $state;
 };
 
 $(".js-example-templating").select2({
-    templateResult: formatState
+  templateResult: formatState
 });
 
 
@@ -73,7 +72,7 @@ const projectSlider = document.querySelector('.project-slider');
 var mySwiperProject = new Swiper(projectSlider, {
   slidesPerView: 3,
   spaceBetween: 10,
-  speed: 600, 
+  speed: 600,
   allowTouchMove: true,
   navigation: {
     nextEl: '.project-slider-sect .nav-arrow-right',
@@ -83,7 +82,7 @@ var mySwiperProject = new Swiper(projectSlider, {
     0: {
       slidesPerView: 1,
       spaceBetween: 8,
-    },   
+    },
     576: {
       slidesPerView: 2,
     },
@@ -98,7 +97,7 @@ const retrofitSlider = document.querySelector('.retrofit-slider');
 var mySwiperRetrofit = new Swiper(retrofitSlider, {
   slidesPerView: 3,
   spaceBetween: 10,
-  speed: 600, 
+  speed: 600,
   allowTouchMove: true,
   navigation: {
     nextEl: '.retrofit-slider-sect .nav-arrow-right',
@@ -108,7 +107,7 @@ var mySwiperRetrofit = new Swiper(retrofitSlider, {
     0: {
       slidesPerView: 1,
       spaceBetween: 8,
-    },   
+    },
     576: {
       slidesPerView: 2,
     },
@@ -167,7 +166,7 @@ const updateSlider = document.querySelector('.update-slider');
 var mySwiperUpdate = new Swiper(updateSlider, {
   slidesPerView: 3,
   spaceBetween: 10,
-  speed: 600, 
+  speed: 600,
   allowTouchMove: true,
   navigation: {
     nextEl: '.update-slider-sect .nav-arrow-right',
@@ -177,7 +176,7 @@ var mySwiperUpdate = new Swiper(updateSlider, {
     0: {
       slidesPerView: 1,
       spaceBetween: 8,
-    },   
+    },
     576: {
       slidesPerView: 2,
     },
@@ -192,7 +191,7 @@ const chipSlider = document.querySelector('.chip-slider');
 var mySwiperChip = new Swiper(chipSlider, {
   slidesPerView: 5,
   spaceBetween: 40,
-  speed: 600, 
+  speed: 600,
   allowTouchMove: true,
   navigation: {
     nextEl: '.chip-slider .nav-arrow-right',
@@ -202,12 +201,63 @@ var mySwiperChip = new Swiper(chipSlider, {
     0: {
       slidesPerView: 1,
       spaceBetween: 8,
-    },   
+    },
     576: {
       slidesPerView: 2,
     },
     992: {
       slidesPerView: 5,
+    },
+  },
+});
+
+// socials-slider
+const socialsSlider = document.querySelector('.socials-slider');
+var mySwiperSocials = new Swiper(socialsSlider, {
+  slidesPerView: 4,
+  spaceBetween: 35,
+  speed: 600,
+  allowTouchMove: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 8,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    1192: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+// categories-slider
+const categoriesSlider = document.querySelector('.categories-slider');
+var mySwiperCategories = new Swiper(categoriesSlider, {
+  slidesPerView: 3,
+  spaceBetween: 48,
+  speed: 600,
+  allowTouchMove: true, 
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 25,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 25,
+    },
+    1200: {
+      spaceBetween: 48
     },
   },
 });

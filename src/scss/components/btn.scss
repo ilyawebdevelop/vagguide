@@ -9,6 +9,10 @@
     font-size: 15px;
     padding-left: 26px;
     padding-right: 26px;
+    @media(max-width: 991px){
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 
     &--red {
         background: #FF1F1F;
@@ -56,6 +60,18 @@
     padding-bottom: 26px;
     grid-column: 3 span;
     font-size: 18px;
+    @media(max-width: 1199px){
+        grid-column: 6 span;
+    }
+    @media(max-width: 767px){
+        grid-column: 12 span;
+        height: 65px;
+        font-size: 16px;
+        line-height: 16px;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-radius: 5px;
+    }
 }
 
 .link-more {
@@ -67,6 +83,9 @@
     font-size: 14px;
     margin-top: 35px;
     transition: color .2s linear;
+    @media(max-width: 991px){
+        margin-top: 15px;
+    }
 
     &:hover {
         svg {
@@ -84,6 +103,9 @@
 
 .baner-item__btn {
     height: fit-content;
+    @media(max-width: 767px){
+        width: 100%;
+    }
 }
 
 .footer-contacts-btn {
@@ -169,4 +191,9 @@
     margin-left: auto;  
     margin-right: auto;
     display: flex;
+}
+.reviews-slide__btn {
+    @media(max-width: 991px){
+        min-width: 73px;
+    }
 }

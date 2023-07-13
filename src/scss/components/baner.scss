@@ -2,6 +2,9 @@
 .baner {
     // padding-top: 0;
     padding-top: 70px;
+    @media(max-width: 991px){
+        padding-top: 50px;
+    }
     &-item {
         background-repeat: no-repeat;
         background-size: cover;
@@ -9,12 +12,20 @@
         padding-bottom: 63px;
         padding-right: 45px;
         border-radius: 5px;
+        @media(max-width: 991px){
+            padding-bottom: 43px;
+            padding-top: 200px;
+            padding-right: 0;
+        }
 
         .h2 {
             color: #fff;
             max-width: 435px;
             line-height: 36px;
             margin-bottom: 0;
+            @media(max-width: 991px){
+                font-size: 32px;
+            }
 
             span {
                 color: $red-color;
@@ -23,6 +34,13 @@
 
         &__content {
             column-gap: 42px;
+            @media(max-width: 991px){
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 27px;
+                padding-right: 27px;
+                row-gap: 15px;
+            }
 
         }
     }
@@ -50,7 +68,7 @@
         display: flex;
         column-gap: 10px;
         padding-left: 20px;
-        padding-right: 20px;
+        padding-right: 20px;     
   
         img {
             width: 20px;

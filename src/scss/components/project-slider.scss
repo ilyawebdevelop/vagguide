@@ -57,6 +57,9 @@
     }
     &__date {
         opacity: .5;
+        @media(max-width: 991px){
+            font-size: 16px;
+        }
     }
     &__content {
         padding-top: 25px;
@@ -76,6 +79,11 @@
         /* Включаем флексбоксы */
         -webkit-box-orient: vertical;
         /* Вертикальная ориентация */       
+        @media(max-width: 991px){
+            font-size: 16px;
+            height: 74px;
+            -webkit-line-clamp: 3;
+        }
         &:hover {
             color: #FF1F1F;
         } 
