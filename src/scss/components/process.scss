@@ -1,0 +1,66 @@
+// process
+.process {
+    padding-top: 0;
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 65px;
+        row-gap: 55px;
+    }
+
+    &-item {
+        grid-column: 4 span;
+        padding: 34px 32px 30px 29px;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.10);
+        position: relative;
+        &:nth-child(1){
+            &::after {
+                content: '1';
+            }
+        }
+        &:nth-child(2){
+            &::after {
+                content: '2';
+            }
+        }
+        &:nth-child(3){
+            &::after {
+                content: '3';
+            }
+        }
+        &:nth-child(4){
+            &::after {
+                content: '4';
+            }
+        }
+        &:nth-child(5){
+            &::after {
+                content: '5';
+            }
+        }
+        &:nth-child(6){
+            &::after {
+                content: 'готово';
+                text-transform: uppercase;
+                color: #FF1F1F;
+                width: 130px;
+            }
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: -28px;
+            width: 33px;
+            height: 51px;
+            font-family: $font-family-title;
+            font-size: 48px;
+            line-height: 48px;
+            font-weight: 700;
+            background-color: #fff;
+            text-align: center;
+        }
+    }
+}

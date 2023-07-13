@@ -1,0 +1,62 @@
+// variants
+.variants {
+    padding-top: 0;
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 45px;
+    }
+
+    &-item {
+        border-radius: 5px;
+        background: rgba(0, 0, 0, 0.03);
+        position: relative;
+        grid-column: 4 span;
+        padding: 27px 32px 55px;
+
+        &__name {
+            opacity: .5;
+            line-height: 22px;
+            margin-bottom: 10px;
+        }
+
+        &__descr {
+            opacity: .5;
+            line-height: 22px;
+            margin-bottom: 44px;
+        }
+
+        &__title {
+            margin-bottom: 35px;
+        }
+
+        &__text {
+            font-weight: 500;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 70px;
+            height: 70px;
+            background: url('@img/icons/stage.svg') no-repeat right center / contain;
+        }
+
+        .price {
+            font-weight: 700;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}
+
+.variants-list {
+    li {
+        padding-left: 34px;
+        background: url('@img/icons/check-stage.svg') no-repeat left center / 20px;
+        margin-bottom: 15px;
+    }
+}

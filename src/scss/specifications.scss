@@ -145,6 +145,10 @@ h6 {
   font-size: 48px;
   line-height: 48px;
   font-family: $font-family-title;
+  @media(max-width: 991px){
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 h2 {
   font-size: 36px;

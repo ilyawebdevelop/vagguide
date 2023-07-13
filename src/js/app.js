@@ -9,6 +9,49 @@ flsFunctions.isWebp();
 import Swiper, { Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Scrollbar } from 'swiper';
 Swiper.use([Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Scrollbar]);
 
+
+
+// Burger
+const btnMenu = document.querySelector('#toggle');
+let btnMenuClose = document.querySelector('.btn-close');
+const menu = document.querySelector('.header__nav');
+const bodyEl = document.querySelector('body');
+
+const menuLine1 = document.querySelector('.top-bun');
+const menuLine2 = document.querySelector('.meat');
+const menuLine3 = document.querySelector('.bottom-bun');
+
+const toggleMenu = function () {
+  menu.classList.toggle('open');
+}
+const toggleBurger = function () {
+  btnMenu.classList.toggle('active');
+}
+const bodyOverflow = function () {
+  bodyEl.classList.toggle('hidden');
+}
+
+const toggleMenuLine = function () {
+  menuLine1.classList.toggle('active');
+  menuLine2.classList.toggle('active');
+  menuLine3.classList.toggle('active');
+}
+
+btnMenu?.addEventListener('click', function (e) {
+  e.stopPropagation();
+  toggleMenu();
+  toggleBurger();
+  bodyOverflow();
+  toggleMenuLine();
+});
+btnMenuClose.addEventListener('click', function (e) {
+  e.stopPropagation();
+  toggleMenu();
+  toggleBurger();
+  bodyOverflow();
+  toggleMenuLine();
+});
+
 function formatState(state) {
     if (!state.id) {
         return state.text;
@@ -35,6 +78,31 @@ var mySwiperProject = new Swiper(projectSlider, {
   navigation: {
     nextEl: '.project-slider-sect .nav-arrow-right',
     prevEl: '.project-slider-sect .nav-arrow-left',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 8,
+    },   
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+// retrofit-slider
+const retrofitSlider = document.querySelector('.retrofit-slider');
+var mySwiperRetrofit = new Swiper(retrofitSlider, {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  speed: 600, 
+  allowTouchMove: true,
+  navigation: {
+    nextEl: '.retrofit-slider-sect .nav-arrow-right',
+    prevEl: '.retrofit-slider-sect .nav-arrow-left',
   },
   breakpoints: {
     0: {
@@ -119,9 +187,34 @@ var mySwiperUpdate = new Swiper(updateSlider, {
   },
 });
 
+// chip-slider
+const chipSlider = document.querySelector('.chip-slider');
+var mySwiperChip = new Swiper(chipSlider, {
+  slidesPerView: 5,
+  spaceBetween: 40,
+  speed: 600, 
+  allowTouchMove: true,
+  navigation: {
+    nextEl: '.chip-slider .nav-arrow-right',
+    prevEl: '.chip-slider .nav-arrow-left',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 8,
+    },   
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 5,
+    },
+  },
+});
+
 let brandCards = document.querySelectorAll('.brands-item');
 let brandCardsLength = brandCards.length;
 
-brandCards[brandCardsLength - 1].classList.add('bottom-b-0');
-brandCards[brandCardsLength - 2].classList.add('bottom-b-0');
-brandCards[brandCardsLength - 3].classList.add('bottom-b-0');
+brandCards[brandCardsLength - 1]?.classList.add('bottom-b-0');
+brandCards[brandCardsLength - 2]?.classList.add('bottom-b-0');
+brandCards[brandCardsLength - 3]?.classList.add('bottom-b-0');

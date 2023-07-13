@@ -60,3 +60,15 @@
 .baner-item-logo {
     margin-right: auto;
 }
+.baner-activation {
+    padding-top: 0;
+    .baner__descr {
+        color: #fff;
+        opacity: .5;
+        p {
+            margin-bottom: 5px;
+        }
+       
+       
+    }
+}

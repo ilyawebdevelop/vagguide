@@ -1,0 +1,251 @@
+.model-auto {
+    padding-top: 42px;
+    margin-bottom: -480px;
+
+    &__info {
+        opacity: .5;
+        line-height: 20px;
+        white-space: nowrap;
+    }
+
+    &__image {
+        position: relative;
+        bottom: 380px;
+    }
+}
+
+.retrofit {
+    padding-top: 45px;
+    padding-bottom: 0;
+}
+
+.retrofit-cards {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 48px;
+    row-gap: 50px;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: .1);
+    padding-bottom: 80px;
+}
+
+.retrofit-card {
+    grid-column: 4 span;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+
+        img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        &:hover {
+            opacity: .9;
+        }
+    }
+
+    &__content {
+        padding: 26px 26px 32px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &__descr {
+        opacity: .5;
+        line-height: 22px;
+        margin-bottom: 15px;
+        margin-top: 11px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        height: 52px;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        transition: color .2s linear;
+        /* Включаем флексбоксы */
+        -webkit-box-orient: vertical;
+
+        /* Вертикальная ориентация */
+        &:hover {
+            color: #FF1F1F;
+        }
+    }
+}
+
+.retrofit-card__btn-wrapper {
+    display: flex;
+    column-gap: 15px;
+    margin-top: 27px;
+}
+.chip {
+    padding-bottom: 0;
+}
+.chip-table {
+    margin-bottom: 35px;
+}
+
+.chip-table__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 3px;
+
+}
+
+.chip-table__col {
+    grid-column: 3 span;
+
+}
+
+.chip-table_gray {
+    .chip-table__col {
+        background-color: rgba(0, 0, 0, 0.03);
+    }
+}
+
+.chip-table__head {
+    border-top: 1px solid rgba($color: #000000, $alpha: .1);
+
+    .chip-table__col {
+        padding-top: 37px;
+        padding-bottom: 30px;
+        text-align: center;
+
+        span {
+            color: #FF1F1F;
+            font-weight: 700;
+        }
+    }
+}
+
+.chip-table__body {
+    .chip-table__col {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+.chip-table__footer {
+    &.chip-table__grid {
+        column-gap: 0;
+    }
+
+    .chip-table__col {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.chip-info {
+    border-radius: 5px;
+    border: 1px solid #FD5;    
+    padding-left: 90px;
+    background: rgba(255, 221, 85, 0.05) url('@img/model/chip-info.svg') no-repeat left 35px center / 24px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-right: 32px;
+    line-height: 24px;
+}
+
+.chip-table__price {
+    .chip-table__col {
+        padding-top: 26px;
+        padding-bottom: 26px;
+        font-weight: 700;
+    }
+}
+
+.chip-table__col_gray {
+    opacity: .5;
+}
+
+.chip-rus {
+    border-radius: 5px;
+    background: #101010;
+    color: #fff;
+    margin-top: 75px;
+
+}
+
+.chip-rus-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.chip-rus-link {
+    font-family: $font-family-title;
+    font-size: 32px;
+    padding-top: 47px;
+    padding-bottom: 44px;
+    padding-right: 290px;
+    text-align: end;
+    background: url('@img/model/rus-link.svg') no-repeat right 40px center / 220px;
+    transition: color .2s linear;
+
+    &:hover {
+        color: #FF1F1F;
+    }
+
+    &:first-child {
+        border-right: 1px solid rgba(255, 255, 255, 0.15);
+        text-align: start;
+    }
+}
+
+.chip-options {
+    margin-top: 75px;
+}
+
+.chip-options__head {
+    opacity: .5;
+    border-top: 1px solid rgba($color: #000000, $alpha: .1);
+}
+.chip-options__body {
+    .chip-options__row {
+        
+        &:nth-child(odd){
+            background-color: rgba($color: #000000, $alpha: .03);
+        }
+ 
+    }
+}
+
+.chip-options__col {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 58px;
+}
+
+.chip-options__grid {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.activation {
+    padding-bottom: 45px;
+    .chip-options__table {
+        margin-bottom: 45px;
+    }
+    .chip-options__grid {
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+    .chip-options__body {
+        .chip-options__col {
+            &:nth-child(2){
+                opacity: .5;
+            }
+        }
+    }
+}

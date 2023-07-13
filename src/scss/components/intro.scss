@@ -10,6 +10,10 @@
 
     &-main {
         padding-top: 310px;
+        @media(max-width: 991px){
+            padding-top: 300px;
+            padding-bottom: 125px;
+        }
     }
 
     .h1 {
@@ -75,4 +79,34 @@
 .intro-contacts__list {
     display: grid;
     grid-template-columns: auto auto auto auto;
+}
+.intro-model{    
+    padding-bottom: 75px;
+    .breadcrumbs {
+        &+.h1 {
+            max-width: 545px;
+        }
+    } 
+}
+.intro-grid {
+    display: grid;
+    grid-template-columns: auto 370px;
+    justify-content: space-between;
+}
+.intro-grid__left {
+    max-width: 735px;
+    .h1 {
+        color: #fff;
+    }
+}
+.intro-grid__right {
+    .intro__descr {
+        color: #fff;
+    }
+    .auto-logo {
+        margin-top: 35px;
+        ul {
+            justify-content: flex-start;
+        }
+    }
 }

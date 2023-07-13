@@ -108,7 +108,7 @@
 .intro-standart {
   .breadcrumbs {
     padding-top: 215px;
-    .h1 {
+    &+.h1 {
       color: #fff;
      max-width: 735px;
     }

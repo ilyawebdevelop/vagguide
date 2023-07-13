@@ -4,12 +4,15 @@
   align-self: center;
   flex-direction: column;
   justify-content: space-between;
-  width: 18px;
-  height: 14px;
+  width: 30px;
+  height: 20px;
   min-width: 15px;
-  margin-right: 20px;
+  // margin-right: 20px;
   cursor: pointer;
   position: relative;
+  &.active {
+    background: url('@img/icons/close.svg') no-repeat center center/cover;
+  }
 
   // transition: background 0.2s linear;  
   display: none;
@@ -23,8 +26,12 @@
   align-self: flex-start;
   height: 2px;
   width: 100%;
-  background: #222;
+  background: #FF1F1F;
   border-radius: 10px;
+  transition: opacity .2s linear;
+}
+.hamburger .bottom-bun {
+  width: 70%;
 }
 
 .hamburger .meat {

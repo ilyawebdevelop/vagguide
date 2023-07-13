@@ -23,8 +23,8 @@ AOS.init();
 // Реализация табов
 let tabsSection = document.querySelector('.tabs');
 
-	import GraphTabs from 'graph-tabs';
+import GraphTabs from 'graph-tabs';
 
-	if(tabsSection) {
-		const tabs = new GraphTabs('popup');
-	}
+if (tabsSection) {
+	const tabs = new GraphTabs('chip-tabs');
+}
