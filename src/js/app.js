@@ -199,7 +199,7 @@ var mySwiperChip = new Swiper(chipSlider, {
   },
   breakpoints: {
     0: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 8,
     },
     576: {
@@ -242,7 +242,7 @@ var mySwiperCategories = new Swiper(categoriesSlider, {
   slidesPerView: 3,
   spaceBetween: 48,
   speed: 600,
-  allowTouchMove: true, 
+  allowTouchMove: true,
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -262,9 +262,53 @@ var mySwiperCategories = new Swiper(categoriesSlider, {
   },
 });
 
+
+// sleep-slider
+const sleepSlider = document.querySelector('.sleep-slider');
+var mySwiperSleep = new Swiper(sleepSlider, {
+  slidesPerView: 4,
+  spaceBetween: 45,
+  speed: 600, 
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    1192: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+const minMediaQuery992 = window.matchMedia('(min-width: 992px)');
+const minMediaQuery768 = window.matchMedia('(min-width: 768px)');
+
 let brandCards = document.querySelectorAll('.brands-item');
 let brandCardsLength = brandCards.length;
 
-brandCards[brandCardsLength - 1]?.classList.add('bottom-b-0');
-brandCards[brandCardsLength - 2]?.classList.add('bottom-b-0');
-brandCards[brandCardsLength - 3]?.classList.add('bottom-b-0');
+
+if (minMediaQuery768.matches) {
+  brandCards[brandCardsLength - 1]?.classList.add('bottom-b-0');
+  brandCards[brandCardsLength - 2]?.classList.add('bottom-b-0');
+  // brandCards[brandCardsLength - 3]?.classList.add('bottom-b-0');
+}
+
+if (minMediaQuery992.matches) {
+  brandCards[brandCardsLength - 1]?.classList.add('bottom-b-0');
+  brandCards[brandCardsLength - 2]?.classList.add('bottom-b-0');
+  brandCards[brandCardsLength - 3]?.classList.add('bottom-b-0');
+}
+
+
+
+
+
+
+

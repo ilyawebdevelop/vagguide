@@ -7,6 +7,15 @@
         grid-template-columns: repeat(12, 1fr);
         column-gap: 65px;
         row-gap: 55px;
+        @media(max-width: 1199px){
+            column-gap: 20px;
+        }
+        @media(max-width: 991px){
+            margin-top: 45px;
+        }
+        @media(max-width: 575px){
+            row-gap: 40px;
+        }
     }
 
     &-item {
@@ -15,6 +24,12 @@
         border-radius: 5px;
         border: 1px solid rgba(0, 0, 0, 0.10);
         position: relative;
+        @media(max-width: 991px){
+            grid-column: 6 span;
+        }
+        @media(max-width: 575px){
+            grid-column: 12 span;
+        }
         &:nth-child(1){
             &::after {
                 content: '1';

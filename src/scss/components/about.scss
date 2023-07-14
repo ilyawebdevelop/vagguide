@@ -1,9 +1,16 @@
 .about {
     background-color: #F8F8F8;
+    @media(max-width: 991px){
+        padding-bottom: 15px;
+    }
     &-grid {
         display: grid;
         grid-template-columns: 50% 50%;
         column-gap: 40px;
+        @media(max-width: 991px){
+            grid-template-columns: 1fr;
+            column-gap: 0;
+        }
     }
     &-item {
         p {
@@ -13,4 +20,9 @@
 }
 .about-bg-white{
     background-color: transparent;
+}
+.about-offset {
+    @media(max-width: 767px){
+        padding-top: 110px;
+    }
 }

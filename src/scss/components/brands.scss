@@ -1,5 +1,8 @@
 // brands
 .brands {
+    @media(max-width: 991px){
+        padding-bottom: 0;
+    }
     &-grid {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -9,11 +12,29 @@
         border-right: 1px solid rgba(0, 0, 0, 0.10);
         border-bottom: 1px solid rgba(0, 0, 0, 0.10);
         padding-bottom: 45px;
+        @media(max-width: 991px){
+            grid-column: 6 span;
+        }
+        @media(max-width: 575px){
+            grid-column: 12 span;
+            border-right: none;
+        }
         &.bottom-b-0 {
-            border-bottom: none;
+            border-bottom: none;           
         }
         &:nth-child(3n+3){
             border-right: none;
+            @media(max-width: 991px){
+                border-right: 1px solid rgba(0, 0, 0, 0.10);
+            }
+            @media(max-width: 575px){
+                border-right: none;
+            }
+        }
+        &:nth-child(2n+2){
+            @media(max-width: 991px){
+                border-right: none;
+            }
         }
         &__image {
             max-height: 235px;

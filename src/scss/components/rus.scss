@@ -2,6 +2,9 @@
 .works {
     &.project-slider-sect {
         padding-bottom: 75px;
+        @media(max-width: 991px){
+            padding-bottom: 35px;
+        }
     }
 }
 .update-slider-sect {

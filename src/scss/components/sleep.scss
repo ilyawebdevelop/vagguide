@@ -1,12 +1,12 @@
 // sleep
 .sleep {
     padding-top: 0;
-    &__grid {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        column-gap: 45px;
-        row-gap: 45px;
+  &-slider {
+    @media(max-width: 767px){
+        padding-right: 75px;
+        overflow: visible;
     }
+  }
     &__item {
         grid-column: 3 span;
         border-radius: 5px;

@@ -92,8 +92,17 @@
 .related {
     background-color: #F8F8F8;
     padding-bottom: 75px;
+    .project-slider {
+        padding-bottom: 0;
+    }
+    @media(max-width: 991px){
+        padding-bottom: 35px;
+    }
     .slider-title-wrapper {
         margin-bottom: 40px;
+        @media(max-width: 991px){
+            margin-bottom: 31px;
+        }
     }
     .project-card {
         box-shadow: none;

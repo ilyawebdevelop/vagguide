@@ -56,12 +56,33 @@
 .baner-social {
     .baner-item__content {
         column-gap: 85px;
+        padding-right: 0;
+        padding-left: 0;
+        @media(max-width: 991px){
+            row-gap: 25px;
+        }
+    }
+    .baner-item-logo {
+        @media(max-width: 991px){
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 45px;
+        }
     }
     .baner-item {
         padding-left: 62px;
+        @media(max-width: 991px){
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 70px;
+        }
         .h2 {
             max-width: 550px;
             font-size: 32px;
+            @media(max-width: 991px){
+                text-align: center;
+                font-size: 30px;
+            }
         }
     }
     .baner-item__btn {
@@ -69,6 +90,9 @@
         column-gap: 10px;
         padding-left: 20px;
         padding-right: 20px;     
+        @media(max-width: 991px){
+            justify-content: center;
+        }
   
         img {
             width: 20px;
@@ -80,6 +104,22 @@
 }
 .baner-activation {
     padding-top: 0;
+    .baner-item {
+        @media(max-width: 1199px){
+            padding-left: 30px;
+        }
+        @media(max-width: 991px){
+            padding-top: 40px;       
+            padding-left: 0;    
+        }
+    }
+    .baner-item__content {
+        @media(max-width: 991px){
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
     .baner__descr {
         color: #fff;
         opacity: .5;

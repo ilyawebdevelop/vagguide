@@ -6,6 +6,12 @@
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         column-gap: 45px;
+        @media(max-width: 1199px){
+            column-gap: 20px;
+        }
+        @media(max-width: 991px){
+            row-gap: 20px;
+        }
     }
 
     &-item {
@@ -14,6 +20,14 @@
         position: relative;
         grid-column: 4 span;
         padding: 27px 32px 55px;
+        @media(max-width: 991px){
+            padding-left: 25px;
+            padding-right: 25px;
+            grid-column: 6 span;
+        }
+        @media(max-width: 767px){
+            grid-column: 12 span;
+        }
 
         &__name {
             opacity: .5;

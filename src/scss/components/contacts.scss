@@ -69,12 +69,32 @@
     .contacts-grid {
         margin-bottom: 0;
         row-gap: 35px;
+        @media(max-width: 991px){
+            margin-top: 0;
+        }
+        @media(max-width: 575px){
+            row-gap: 25px;
+        }
         .contacts-item {
             padding-top: 32px;
             border-top: 1px solid rgba($color: #000000, $alpha: .15);
+            @media(max-width: 575px){
+                border-top: none;
+                padding-top: 0;
+            }
         }
+    }
+    .title-mobile {
+        padding-top: 34px;
+        padding-bottom: 34px;
     }
 }
 .contacts-wrapper {
     padding-top: 75px;
+    @media(max-width: 991px){
+        padding-top: 35px;
+    }
+}
+.intro-contact__phone {
+    white-space: nowrap;
 }
