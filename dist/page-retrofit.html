@@ -666,11 +666,143 @@
     </div>
 </footer>
 		<!-- modal -->
-<!-- event -->
-<div class="modal fade modal-event" id="modal-event" tabindex="-1" aria-labelledby="exampleModalLabel"
+<!-- order -->
+<div class="modal fade modal-order" id="modal-order" tabindex="-1" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
+
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Запись на установку</h2>
+      </div>
+      <div class="modal-body">
+        <p class="modal-descr">
+          Заполните форму ниже и наши специалисты свяжутся с ваши для уточнения всех деталей и записи в удобное для вас
+          время.
+        </p>
+        <div class="modal-form">
+          <div class="modal-form__content">
+            <div class="modal-form__input-wrapper">
+              <span class="form-label">Как вас зовут?</span>
+              <input type="text" class="form-input">
+            </div>
+            <div class="modal-form__input-wrapper">
+              <span class="form-label">Номер телефона</span>
+              <input type="tel" class="form-input">
+            </div>
+            <div class="modal-form__input-wrapper">
+              <span class="form-label">Марка и модель автомобиля</span>
+              <input type="text" class="form-input">
+            </div>
+            <div class="modal-form__input-wrapper">
+              <span class="form-label">Год выпуска</span>
+              <input type="text" class="form-input">
+            </div>
+          </div>
+          <div class="modal-form__info d-flex">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#info"></use>
+            </svg>
+            <span>
+              Нажимая кнопку вы соглашаетесь с политикой
+              обработки персональных данных.
+            </span>
+          </div>
+          <button class="btn btn--red footer-contacts-btn modal-btn">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#phone"></use>
+            </svg>
+            Заказать обратный звонок
+          </button>
+
+        </div>
+      </div>
+      <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#close"></use>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+</div>
+
+<!-- retrofit-about -->
+<div class="modal fade modal-about" id="modal-about" tabindex="-1" aria-labelledby="exampleModalLabel_1"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered .modal-fullscreen">
+    <div class="modal-content">
+      <div class="container">
+        <div class="modal-body modal-grid">
+
+          <img src="img/model/retrofit.png" alt="image" class="modal-image">
+
+          <div class="modal-right">
+            <h2 class="modal-title" id="exampleModalLabel">Система ночного видения</h2>
+            <div class="price">250 000 ₽</div>
+
+            <div class="modal-btn-wrapper">
+
+              <button class="btn btn--red footer-contacts-btn modal-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#phone"></use>
+                </svg>
+                Заказать обратный звонок
+              </button>
+              <button class="btn btn--black modal-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#phone"></use>
+                </svg>
+                Написать в Telegram
+              </button>
+            </div>
+
+            <p class="modal-descr">
+              Дополнительный головной дисплей использует лобовое стекло в качестве проекционного экрана для отображения
+              важной информации,
+              показывает скорость, сообщения из систем помощи водителю или инструкции по навигации.
+            </p>
+
+            <strong class="modal-list-subtitle">Перечень работ:</strong>
+            <ul>
+              <li>
+                Камера
+              </li>
+              <li>
+                Проводка
+              </li>
+              <li>
+                Установка
+              </li>
+              <li>
+                Программирование
+              </li>
+              <li>
+                Калибровка на стенде
+              </li>
+            </ul>
+
+            <div class="modal-form__info d-flex">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#info"></use>
+              </svg>
+              <span>
+                Возможность установки и финальная стоимость зависит от комплектации вашего автомобиля.
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+
+
+
 
     </div>
   </div>

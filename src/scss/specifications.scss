@@ -36,6 +36,9 @@ html {
 body.hidden {
   overflow: hidden
 }
+body.modal-open {
+  overflow: hidden
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -56,22 +59,21 @@ section {
 }
 
 .form-input {
-  height: 58px;
-  border-radius: 10px;
-  border: 1px solid #838383;
+  height: 36px;  
+ 
   background-color: #ffffff;
-  width: 530px;
-  padding-left: 27px;
+  width: 100%;
   font-size: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
 
-  @media(max-width: 1199px) {
-    padding-left: 24px;
-  }
 
   &::placeholder {
     color: #b0b0b0;
     font-size: 16px;
   }
+}
+.form-label {
+  font-size: 16px;
 }
 
 .fw-medium {
